@@ -1,0 +1,34 @@
+# Backend dependencies, pinned so everyone gets the same versions.
+# Install inside a virtual environment, from the backend/ folder:
+#   python -m venv .venv
+#   .venv\Scripts\activate        (Windows)   |   source .venv/bin/activate   (macOS/Linux)
+#   pip install -r requirements.txt
+# Adding a library? Add it here, pinned, in the same PR.
+
+# API (C)
+fastapi==0.165.0
+uvicorn==0.54.0
+python-multipart==0.0.34
+pydantic==2.14.4
+python-dotenv==1.2.4
+
+# Parsing (A)
+pdfplumber==0.11.11
+python-docx==1.2.0
+
+# Encoders + FNN (A); torch is a large download
+torch==2.15.0
+sentence-transformers==6.3.0
+transformers==5.24.1
+scikit-learn==1.9.1
+
+# RAG + agent (B)
+chromadb==1.5.9
+langgraph==1.2.24
+anthropic==2.14.0
+
+# Observability (optional)
+langfuse==5.2.0
+
+# Dev
+pytest==9.2.0
