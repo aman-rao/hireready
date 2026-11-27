@@ -236,3 +236,7 @@ chroma_db/
 
 # Python template ignores lib/; keep the frontend one
 !frontend/lib/
+
+# Local-only files (not shared with the team)
+backend/scripts/generate_kb.py
+docs/b-design-log.md
